@@ -1,0 +1,7 @@
+- first/last/take(1)
+- takeUntil vs takeWhile
+- catchError
+- vs reduce tussen reduce in JS en RxJs (scan)
+- scan voorbeeld message stream
+- aandacht operators Array en RxJs
+- merge

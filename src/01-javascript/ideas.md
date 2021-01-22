@@ -1,0 +1,6 @@
+- types like Record, ...
+- Map vs Array
+- const vs let vs var
+- berekenen aantal ingredienten volgens aantal personen
+- immutability
+- pure functions
