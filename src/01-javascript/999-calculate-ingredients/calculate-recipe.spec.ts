@@ -4,44 +4,44 @@ import {kibbeling, peper, recipe} from "./recipe";
 describe('calculateRecipe', () => {
 
   test.each`
-  recipe    | totalPerson    | expected
+  recipe    | servings    | expected
   ${recipe} | ${1} | ${1}
   ${recipe} | ${2} | ${2}
   ${recipe} | ${10} | ${10}
-`('calculateIngredient($recipe, $totalPerson).totalPeron should return $expected persons', ({
+`('calculateIngredient($recipe, $servings).totalPeron should return $expected persons', ({
                                                                                                                                                                                        recipe,
-                                                                                                                                                                                       totalPerson,
+                                                                                                                                                                                       servings,
                                                                                                                                                                                        expected
                                                                                                                                                                                      }) => {
-    expect(calculateRecipe(recipe, totalPerson).totalPerson).toBe(expected)
+    expect(calculateRecipe(recipe, servings).servings).toBe(expected)
   });
 
   test.each`
-  recipe    | totalPerson    | expected
+  recipe    | servings    | expected
   ${recipe} | ${1} | ${140}
   ${recipe} | ${2} | ${280}
   ${recipe} | ${10} | ${1400}
-  `('calculateIngredient($recipe, $totalPerson) ingredient kibbeling should return $expected persons', ({
+  `('calculateIngredient($recipe, $servings) ingredient kibbeling should return $expected persons', ({
                                                                                                                                                                                                          recipe,
-                                                                                                                                                                                                         totalPerson,
+                                                                                                                                                                                                         servings,
                                                                                                                                                                                                          expected
                                                                                                                                                                                                        }) => {
-    const {ingredients} = calculateRecipe(recipe, totalPerson)
+    const {ingredients} = calculateRecipe(recipe, servings)
 
     expect(ingredients.find(ingredient => ingredient.name === kibbeling.name)?.quantity).toBe(expected)
   });
 
   test.each`
-  recipe    | totalPerson    | expected
+  recipe    | servings    | expected
   ${recipe} | ${1} | ${undefined}
   ${recipe} | ${2} | ${undefined}
   ${recipe} | ${10} | ${undefined}
-  `('calculateIngredient($recipe, $totalPerson) ingredient peper should return $expected persons', ({
+  `('calculateIngredient($recipe, $servings) ingredient peper should return $expected persons', ({
                                                                                                                                                                                                                       recipe,
-                                                                                                                                                                                                                      totalPerson,
+                                                                                                                                                                                                                      servings,
                                                                                                                                                                                                                       expected
                                                                                                                                                                                                                     }) => {
-    const {ingredients} = calculateRecipe(recipe, totalPerson)
+    const {ingredients} = calculateRecipe(recipe, servings)
 
     expect(ingredients.find(ingredient => ingredient.name === peper.name)?.quantity).toBe(expected)
   });

@@ -1,5 +1,5 @@
-import {calculateIngredient} from "./calculate-ingredient";
-import {Ingredient} from "../../model/ingredient";
+import { calculateIngredient } from "./calculate-ingredient";
+import { Ingredient } from "../../model/ingredient.model";
 
 const orange: Ingredient = {
   name: 'sinaasappelen',
