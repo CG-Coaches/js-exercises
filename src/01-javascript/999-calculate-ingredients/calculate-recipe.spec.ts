@@ -1,5 +1,5 @@
 import {calculateRecipe} from "./calculate-recipe";
-import {kibbeling, peper, recipe} from "./recipe";
+import {kibbeling, peper, recipe} from "../../data/recipe";
 
 describe('calculateRecipe', () => {
 

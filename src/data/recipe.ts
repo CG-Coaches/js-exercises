@@ -1,6 +1,6 @@
 // https://www.colruyt.be/nl/lekker-koken/kibbeling-met-spinazieslaatje-en-gebakken-aardappelen
-import { Recipe } from "../../model/recipe.model";
-import { Ingredient } from "../../model/ingredient.model";
+import { Recipe } from "../model/recipe.model";
+import { Ingredient } from "../model/ingredient.model";
 
 export const kibbeling: Ingredient = {
   name: 'kibbelingen (versmarkt)',
