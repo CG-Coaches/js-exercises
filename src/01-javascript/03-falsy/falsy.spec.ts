@@ -1,6 +1,6 @@
 import {checkFalsy, checkIfEmpty} from "./falsy";
 
-describe('StrictNull', () => {
+describe('falsy', () => {
   test.each`
   value    | expected
   ${''} | ${true}
