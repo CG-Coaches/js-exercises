@@ -49,4 +49,15 @@ describe('calculateRecipe', () => {
   test('All ingredients should be returned', () => {
     expect(calculateRecipe(recipe, 1).ingredients).toHaveLength(recipe.ingredients.length)
   })
+
+  test('Original recipe should not be adjusted', () => {
+    const newRecipe = calculateRecipe(recipe, 1);
+    expect(newRecipe).not.toBe(recipe);
+    expect(newRecipe.ingredients).not.toBe(recipe.ingredients);
+
+    newRecipe.ingredients.forEach((ingredient, index) => {
+      expect(ingredient.name).toBe(ingredient.name)
+      expect(ingredient).not.toBe(recipe.ingredients[0]);
+    })
+  })
 })

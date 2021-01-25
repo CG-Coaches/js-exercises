@@ -5,8 +5,8 @@ import {Recipe} from "../../model/recipe";
 export function calculateRecipe(recipe: Recipe, totalPerson: number): Recipe {
   const ingredients = recipe.ingredients.map(
     ingredient => {
-      const amount =  ingredient.quantity ?  ingredient.quantity / recipe.totalPerson * totalPerson : undefined
-      return {...ingredient, amount}
+      const quantity =  ingredient.quantity ?  ingredient.quantity / recipe.totalPerson * totalPerson : undefined
+      return {...ingredient, quantity}
     }
   )
 
