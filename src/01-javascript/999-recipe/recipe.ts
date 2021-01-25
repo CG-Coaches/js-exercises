@@ -4,51 +4,51 @@ import {Ingredient} from "../../model/ingredient";
 
 export const kibbeling: Ingredient = {
   name: 'kibbelingen (versmarkt)',
-  amount: 560
+  quantity: 560
 }
 export const spinazie: Ingredient = {
   name: 'verse spinazie',
-  amount: 400
+  quantity: 400
 }
 
 export const rodeBieten: Ingredient = {
   name: 'gestoomde rode bieten (versmarkt)',
-  amount: 250
+  quantity: 250
 }
 
 export const avocado: Ingredient = {
   name: 'avocado',
-  amount: 1
+  quantity: 1
 }
 
 export const sinaasappelen: Ingredient = {
   name: 'onbehandelde sinaasappelen (bio)',
-  amount: 1
+  quantity: 1
 }
 
 export const rodeUien: Ingredient = {
   name: 'rode uien',
-  amount: 1
+  quantity: 1
 }
 
 export const aardappelen: Ingredient = {
   name: 'voorgekookte aardappelblokjes (versmarkt)',
-  amount: 500
+  quantity: 500
 }
 
 export const griekseYoghurt: Ingredient = {
   name: 'Griekse yoghurt',
-  amount: 170
+  quantity: 170
 }
 
 export const pistacheNoten: Ingredient = {
   name: 'gepelde, ongezouten pistachenoten',
-  amount: 30
+  quantity: 30
 }
 
 export const olijfolie: Ingredient = {
   name: 'olijfolie',
-  amount: 2
+  quantity: 2
 }
 
 export const peper: Ingredient = {

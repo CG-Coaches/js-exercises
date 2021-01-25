@@ -28,7 +28,7 @@ describe('calculateRecipe', () => {
                                                                                                                                                                                                        }) => {
     const {ingredients} = calculateRecipe(recipe, totalPerson)
 
-    expect(ingredients.find(ingredient => ingredient.name === kibbeling.name)?.amount).toBe(expected)
+    expect(ingredients.find(ingredient => ingredient.name === kibbeling.name)?.quantity).toBe(expected)
   });
 
   test.each`
@@ -43,7 +43,7 @@ describe('calculateRecipe', () => {
                                                                                                                                                                                                                     }) => {
     const {ingredients} = calculateRecipe(recipe, totalPerson)
 
-    expect(ingredients.find(ingredient => ingredient.name === peper.name)?.amount).toBe(expected)
+    expect(ingredients.find(ingredient => ingredient.name === peper.name)?.quantity).toBe(expected)
   });
 
   test('All ingredients should be returned', () => {

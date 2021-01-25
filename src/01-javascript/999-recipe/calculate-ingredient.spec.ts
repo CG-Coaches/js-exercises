@@ -3,7 +3,7 @@ import {Ingredient} from "../../model/ingredient";
 
 const orange: Ingredient = {
   name: 'sinaasappelen',
-  amount: 0.25
+  quantity: 0.25
 }
 
 const peper: Ingredient = {
@@ -12,7 +12,7 @@ const peper: Ingredient = {
 
 const ingredient0: Ingredient = {
   name: 'peper',
-  amount: 0
+  quantity: 0
 }
 
 describe('calculateIngredient', () => {
