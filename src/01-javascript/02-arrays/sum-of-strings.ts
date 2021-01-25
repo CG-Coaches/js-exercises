@@ -1,10 +1,12 @@
+/**
+ * TOPIC: array transformations
+ */
+
+/**
+ * Must return the sum of all strings that are strings of numbers.
+ * Make sure your function is pure, i.e. return value is the same for the same arguments and has no side-effects.
+ */
 export function sumOfStrings(source: string[]): number {
-  /**
-   * TODO: calculate the sum of all numbers in the given array of strings
-   */
-  // return 0;
-  return source
-    .map(x => parseInt(x))
-    .filter(x => !isNaN(x))
-    .reduce((x, y) => x + y, 0);
+  // TODO fix me
+  return 0;
 }
