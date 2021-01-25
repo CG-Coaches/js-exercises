@@ -1,4 +1,4 @@
-import {checkFalsy, returnTrueIfHasValue} from "./strict-null";
+import {checkFalsy, checkIfEmpty} from "./falsy";
 
 describe('StrictNull', () => {
   test.each`
@@ -11,8 +11,8 @@ describe('StrictNull', () => {
   ${false} | ${true}
   ${undefined} | ${false}
   ${null} | ${true}
-`('returnTrueIfHasValue($value) should return $expected', ({value, expected}) => {
-  expect(returnTrueIfHasValue(value)).toBe(expected)
+`('checkIfEmpty($value) should return $expected', ({value, expected}) => {
+  expect(checkIfEmpty(value)).toBe(expected)
   });
 
   test.each`

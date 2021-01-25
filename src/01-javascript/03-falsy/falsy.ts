@@ -1,4 +1,4 @@
-export function returnTrueIfHasValue(value: any ){
+export function checkIfEmpty(value: any ){
   return value !== undefined;
 }
 
