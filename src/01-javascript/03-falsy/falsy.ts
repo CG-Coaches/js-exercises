@@ -1,7 +1,7 @@
-export function checkIfEmpty(value: any ){
-  return value !== undefined;
+export function checkIsEmpty(value: any ){
+  return value === undefined;
 }
 
-export function checkFalsy(value: any){
+export function checkIsFalsy(value: any){
   return !value
 }
