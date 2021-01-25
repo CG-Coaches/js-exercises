@@ -7,12 +7,7 @@ export class FetchColruytClient {
   }
 
   async run(url: string): Promise<string> {
-    const text = await this.fetchUrl(url);
-    return text.replace(/Lidl/ig, 'Colruyt');
-  }
-
-  private async fetchUrl(url: string): Promise<string> {
-    const response = await this.fetch(url);
-    return response.text();
+    // TODO fix me
+    return Promise.resolve(url);
   }
 }

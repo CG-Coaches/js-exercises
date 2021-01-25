@@ -2,7 +2,7 @@ import { callSetTimeout } from './set-timeout';
 
 jest.useFakeTimers();
 
-describe('setTimeout', () => {
+describe.skip('setTimeout', () => {
   test.each`
   t
   ${1000}
@@ -11,7 +11,8 @@ describe('setTimeout', () => {
     const consoleSpy = jest.spyOn(console, 'log').mockImplementation(() => {});
     callSetTimeout(t);
     jest.runAllTimers();
-    expect(consoleSpy).toHaveBeenNthCalledWith(1, 'b');
-    expect(consoleSpy).toHaveBeenNthCalledWith(2, 'a');
+    // TODO guess the nth calls...
+    expect(consoleSpy).toHaveBeenNthCalledWith(0, 'b');
+    expect(consoleSpy).toHaveBeenNthCalledWith(0, 'a');
   });
 })

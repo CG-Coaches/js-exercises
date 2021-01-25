@@ -7,5 +7,6 @@ import { Ingredient } from '../../model/ingredient.model';
  * Make sure you are writing a "pure function".
  */
 export function sortIngredients(ingredients: Ingredient[]): Ingredient[] {
-  return ingredients.sort((a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
+  // TODO fix me
+  return ingredients.sort();
 }

@@ -6,5 +6,5 @@
  */
 export function sumOfStrings(source: string[]): number {
   // TODO fix me
-  return 0;
+  return 42;
 }

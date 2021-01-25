@@ -5,13 +5,6 @@ import { Ingredient } from "../../model/ingredient.model";
  * Round off to 2 decimals.
  */
 export function calculateIngredient(ingredient: Ingredient, servings: number): number | undefined {
-  if (ingredient.quantity === 0) {
-    return 0;
-  }
-
-  if (!ingredient.quantity) {
-    return undefined;
-  }
-
-  return ingredient.quantity * servings;
+  // TODO fix me
+  return;
 }

@@ -2,7 +2,7 @@ import {TestScheduler} from "rxjs/testing";
 import {BikeCarService} from "./switchMap-vs-mergeMap";
 import {Observable} from "rxjs";
 
-describe('switchMap-vs-mergeMap', () => {
+describe.skip('switchMap-vs-mergeMap', () => {
   let testScheduler: TestScheduler;
 
   beforeEach(() => {
