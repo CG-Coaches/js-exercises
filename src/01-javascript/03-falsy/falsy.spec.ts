@@ -1,4 +1,4 @@
-import {checkIsFalsy, checkIsEmpty} from "./falsy";
+import { isFalsy, isEmpty } from "./falsy";
 
 describe('falsy', () => {
   test.each`
@@ -11,8 +11,8 @@ describe('falsy', () => {
   ${false} | ${false}
   ${undefined} | ${true}
   ${null} | ${false}
-`('checkIfEmpty($value) should return $expected', ({value, expected}) => {
-  expect(checkIsEmpty(value)).toBe(expected)
+`('isEmpty($value) should return $expected', ({value, expected}) => {
+  expect(isEmpty(value)).toBe(expected)
   });
 
   test.each`
@@ -25,7 +25,7 @@ describe('falsy', () => {
   ${false} | ${true}
   ${undefined} | ${true}
   ${null} | ${true}
-`('checkFalsy($value) should return $expected', ({value, expected}) => {
-  expect(checkIsFalsy(value)).toBe(expected)
+`('isFalsy($value) should return $expected', ({value, expected}) => {
+  expect(isFalsy(value)).toBe(expected)
   });
 })

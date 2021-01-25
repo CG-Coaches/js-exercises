@@ -1,7 +1,17 @@
-export function checkIsEmpty(value: any ){
+/**
+ * TOPIC: falsy and truthy values, beware of the pitfalls...
+ */
+
+/**
+ * Return true if the value is empty.
+ */
+export function isEmpty(value: any): boolean {
   return value === undefined;
 }
 
-export function checkIsFalsy(value: any){
-  return !value
+/**
+ * Return true if the given value is falsy.
+ */
+export function isFalsy(value: any){
+  return ! value;
 }
