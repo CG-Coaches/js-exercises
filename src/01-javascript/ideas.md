@@ -1,5 +1,4 @@
 - types like Record, ...
 - Map vs Array
 - const vs let vs var
-- immutability
 - pure functions
