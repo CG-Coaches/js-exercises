@@ -3,4 +3,3 @@
 - const vs let vs var
 - immutability
 - pure functions
-- strict null
