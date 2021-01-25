@@ -1,4 +1,5 @@
 - types like Record, ...
 - Map vs Array
-- const vs let vs var
+- scoping: const vs let vs var
 - pure functions
+- event loping
