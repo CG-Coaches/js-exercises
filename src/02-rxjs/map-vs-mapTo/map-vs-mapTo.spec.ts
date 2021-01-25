@@ -44,7 +44,7 @@ describe('map-vs-mapTo', () => {
           }
         }),
       );
-      expectObservable(obs$).toBe('-ab', {
+      expectObservable(obs$).toBe('ab', {
         a: 1,
         b: 2,
       });
