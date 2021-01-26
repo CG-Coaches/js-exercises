@@ -15,9 +15,7 @@ export class MappingService {
 
   mapToLastIndex$(stream$: Observable<number>): Observable<number> {
     return stream$.pipe(
-      // TODO: note the difference between these two operators
-      // mapTo(this.lastIndex),
-      map(() => this.lastIndex),
+      // TODO map the stream to the last index of the private indices array
     );
   }
 }

@@ -3,8 +3,7 @@ import { filter, map, scan } from 'rxjs/operators';
 
 export function sumOfStrings$(source: Observable<string>): Observable<number> {
   return source.pipe(
-    map(x => parseInt(x, 10)),
-    filter(x => ! isNaN(x)),
-    scan((x: number, y: number) => x + y),
+    map(x => 0),
+    // TODO return the cumulative (numeric) sum of all strings (that are numbers) for each item emitted by the source observable
   );
 }

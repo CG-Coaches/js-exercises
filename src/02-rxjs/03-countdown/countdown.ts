@@ -10,7 +10,6 @@ export function countdown$(from: number, period: number, scheduler?: SchedulerLi
    * then the observable emits: 3 (1s passes...) 2 (1s passes...) 1 (observable completes)
    */
   return interval(period, scheduler).pipe(
-    take(from),
-    map(tick => from - tick),
+    // TODO implement me
   );
 }
