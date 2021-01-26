@@ -10,7 +10,7 @@ describe('sortIngredients', () => {
   ${[data.rodeUien, data.avocado]} | ${[data.avocado, data.rodeUien]}
   ${[data.olijfolie, data.peper, data.griekseYoghurt]} | ${[data.griekseYoghurt, data.olijfolie, data.peper]}
   `('sortIngredients $ingredients', ({ ingredients, sorted }) => {
-    const originalIngredients = ingredients;
+    const originalIngredients = [...ingredients];
     expect(sortIngredients(ingredients)).toEqual(sorted);
     expect(ingredients).toEqual(originalIngredients);
   });
