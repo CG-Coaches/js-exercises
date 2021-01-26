@@ -6,14 +6,12 @@
  * Return true if the value is empty.
  */
 export function isEmpty(value: any): boolean {
-  // TODO fix me
-  return false;
+  return value === undefined;
 }
 
 /**
  * Return true if the given value is falsy.
  */
-export function isFalsy(value: any): boolean {
-  // TODO fix me
-  return false;
+export function isFalsy(value: any){
+  return ! value;
 }

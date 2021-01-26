@@ -8,6 +8,16 @@
  * in the first "n" letters of the infinite string.
  */
 export function repeatedString(s: string, n: number): number {
-  // TODO fix me
-  return 42;
+  let occurrences = 0;
+
+  for (let index = 0; index < n; index++) {
+    while (!s[index]) {
+      s += s;
+    }
+    if (s[index] === 'a') {
+      occurrences++;
+    }
+  }
+
+  return occurrences;
 }
