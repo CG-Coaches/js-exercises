@@ -48,3 +48,5 @@ baseline.json
 
 # Husky
 .husky/_
+
+.cache
