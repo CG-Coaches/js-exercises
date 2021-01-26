@@ -3,7 +3,7 @@ import { TestScheduler } from 'rxjs/testing';
 
 import { sumOfStrings$ } from './sum-of-strings-obs';
 
-describe('sumOfStrings$', () => {
+describe.skip('sumOfStrings$', () => {
 
   const assertion = (actual: number, expected: number) => {
     expect(actual).toEqual(expected);

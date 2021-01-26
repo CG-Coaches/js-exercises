@@ -4,7 +4,7 @@ import {MappingService} from './map-vs-mapTo';
 import {delay, tap} from 'rxjs/operators';
 
 
-describe('map-vs-mapTo', () => {
+describe.skip('map-vs-mapTo', () => {
   let testScheduler: TestScheduler;
   beforeEach(() => {
     testScheduler = new TestScheduler((actual, expected) => {

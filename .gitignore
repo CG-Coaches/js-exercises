@@ -50,3 +50,7 @@ baseline.json
 .husky/_
 
 .cache
+
+# Ignore JS output
+src/**/*.js
+src/**/*.js.map

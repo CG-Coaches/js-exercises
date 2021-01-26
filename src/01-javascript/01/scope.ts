@@ -5,7 +5,8 @@
  */
 export function lexicalScoping(a: number): void {
   function multiplyWith(b: number): void {
-    console.log(a * b);
+    // TODO fix me
+    console.log('what?');
   }
   multiplyWith(1);
   multiplyWith(2);

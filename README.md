@@ -19,4 +19,4 @@ But if you want to see some solutions, checkout the "solutions" branch.
 
 You can run this code in CodeSandbox here:
 
-https://codesandbox.io/s/js-exercises-93fdh
+https://codesandbox.io/s/github/CG-Coaches/js-exercises/tree/master/?file=/src/index.ts
