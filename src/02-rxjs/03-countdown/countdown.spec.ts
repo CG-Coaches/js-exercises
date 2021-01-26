@@ -2,7 +2,7 @@ import { TestScheduler } from 'rxjs/testing';
 
 import { countdown$ } from './countdown';
 
-describe.skip('countdown$', () => {
+describe('countdown$', () => {
 
   const assertion = (actual: number, expected: number) => {
     expect(actual).toEqual(expected);

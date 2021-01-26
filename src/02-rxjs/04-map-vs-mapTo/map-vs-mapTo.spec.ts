@@ -1,10 +1,9 @@
-import {TestScheduler} from 'rxjs/testing';
+import { TestScheduler } from 'rxjs/testing';
+import { tap } from 'rxjs/operators';
 
-import {MappingService} from './map-vs-mapTo';
-import {delay, tap} from 'rxjs/operators';
+import { MappingService } from './map-vs-mapTo';
 
-
-describe.skip('map-vs-mapTo', () => {
+describe('map-vs-mapTo', () => {
   let testScheduler: TestScheduler;
   beforeEach(() => {
     testScheduler = new TestScheduler((actual, expected) => {
